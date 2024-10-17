@@ -6,17 +6,53 @@ html, body{
     font-weight: 500;
     font-style: normal;
 }
+code{
+    background-color: #fcd979;
+    font-size: 16px;
+}
 header{
-    margin: 20px;
+    margin: 15px;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    color: #023047;
 }
 .header-nav{
-    margin: 20px 20px 20px 0px;
+    margin: 25px 25px 25px 0px;
     font-size: 30px;
     text-align: left;
-
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #023047;
 }
+p {
+    color: #023047;
+    margin-right: 35px;
+}
+strong{
+    font-size: 18px;
+    /*color: #012638;*/
+}
+.example{
+    width: auto;
+    background-color: #ffe292;
+    color: #023047;
+    margin-right: 40px;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    /*hay que ver otra forma like align items*/
+    padding-left: 90px;
+    align-items: center;
+    border: solid  #023047;
+    border-top-color:transparent;
+    border-left-color: transparent ;
+    /*border-top-color: transparent ;*/
+}
+
 #navbar{
     position: fixed;
     min-width: 290px;
@@ -24,7 +60,8 @@ header{
     left: 0px; 
     width: 300px;
     height: 100%;
-    border-right: solid;
+    border-right: 3px solid;
+    border-right-color: #023047;
     background-color: #8ecae6;
 }
 .navbar a{
@@ -77,3 +114,10 @@ ul li a{
   font-weight: <weight>;
   font-style: normal;
 }*/
+
+/*.lilita-one-regular {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }*/
+  
