@@ -1,0 +1,79 @@
+
+html, body{
+    background-color: #fcca46;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+header{
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+.header-nav{
+    margin: 20px 20px 20px 0px;
+    font-size: 30px;
+    text-align: left;
+
+}
+#navbar{
+    position: fixed;
+    min-width: 290px;
+    top: 0px; 
+    left: 0px; 
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    background-color: #8ecae6;
+}
+.navbar a{
+    display: block;
+    padding: 10px 30px;
+    /*estilo*/
+    background-color: #8ecae6;
+    cursor: pointer;
+}
+
+#navbar ul{
+    padding: 0; 
+    height: 88%;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #023047;
+}
+ ul li a:hover{
+    background-color: #023047;
+    color: #ffffff; 
+    padding: 10px 70px;
+}
+
+ ul li{
+    margin: 10px; 
+    border: solid 2px;
+    border-top-color: #023047;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+    font-size: 18px;
+    list-style-type: none;
+    padding-top: 10px; 
+    text-align: center;
+ }
+
+ .main-doc{
+    position: absolute;
+    margin-left: 330px;
+ }
+
+/* <uniquifier>: Use a unique and descriptive class name
+/* <weight>: Use a value from 100 to 700
+
+/*.roboto-mono-<uniquifier> {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
