@@ -45,7 +45,7 @@
                 <p>Una variable <strong> es un nombre</strong>  que se asocia con un valor que se almacena en la memoria. <strong>Las variables actúan como etiquetas</strong> para 
                 referirse a los datos que queremos manipular o utilizar en un programa. Su sintaxis es <code>variable_name = value</code>. Ejem: </p>
             </article>
-            <div class="example">x = 10 <br>y = "Hello, World!"</div>
+            <div class="example">x = 10 <br> y = "Hello, World!</div>
         </section>
 
         <section class="main-section" id="Data Types">
@@ -62,9 +62,143 @@
         <section class="main-section" id="Expressions">
             <header class="header-nav">Expressions</header>
             <article><p><strong>Las expresiones son combinaciones de valores, variables, operadores y llamadas a funciones que se evalúan y devuelven un valor.</strong>
-                Una expresión puede ser tan simple como un número o una variable, o tan compleja como una combinación de varias operaciones y funciones.</p>
+                Una expresión puede ser tan simple como un número o una variable, o tan compleja como una combinación de varias operaciones y funciones. Siguiendo el orden de las operaciones
+            (PEMDAS) <code>parentesis( ), exponentes, multiplicacion *, division /, suma + y resta - </code>. Ejem:</p>
             </article>
+            <div class="example"> result = 25 * 5 + 100
+            </div>
         </section>
+
+        <section class="main-section" id="Operators">
+            <header class="header-nav">Operators</header>
+            <article><p>Los operadores son símbolos que <strong>realizan operaciones sobre valores u operandos</strong>. Dependiendo del tipo de operación que realicen, 
+                Se pueden clasificar en varias categorías: 
+                <br>Aritmeticos <code>+, -, *, /, %, **, //</code> 
+                <br>Asignacion <code>=, +=, -=, *=, /=, %=, //=, **=</code> 
+                <br> Comparacion <code>==, !=, >, <, >=, <=</code>
+                <br>Logicos <code>and, or, not</code><br>
+            </p>
+            </article>
+            <div class="example">
+                #Aritmeticos <br>
+                a = 10 <br>
+                b = 3 <br>
+                print(a + b)  # 13<br>
+                print(a - b)  # 7<br>
+                print(a * b)  # 30<br>
+                print(a / b)  # 3.333 <br>
+                print(a % b)  # 1 <br>
+                print(a ** b) # 1000 <br>
+                print(a // b) # 3 <br>
+                <br>
+                #Asignacion <br>
+                x = 5 <br>
+                x += 3  # x = x + 3 → x es ahora 8 <br>
+                <br>
+                #Comparacion <br>
+                a = 5 <br>
+                b = 3 <br>
+                print(a == b)  # False <br>
+                print(a != b)  # True <br>
+                <br>
+                #Logicos <br>
+                a = 5 <br>
+                print(a > 3 and a < 10)  # True <br>
+                print(a > 10 or a == 5)  # True <br>
+                print(not(a == 5))       # False <br>
+            </div>
+        </section>
+
+        <section class="main-section" id="Statements">
+            <header class="header-nav">Statements</header>
+            <article><p>Las sentencias condicionales se utilizan para tomar decisiones en el código.
+                <strong>Nos permiten controlar el flujo de nuestro programa.</strong>
+                En Python, usamos principalmente las sentencias <code>if</code> para ejecutar código cuando una condición es verdadera, 
+                    <code>elif</code> para múltiples condiciones y <code>if-else</code> se utiliza cuando quieres ejecutar código diferente para condiciones diferentes.
+                </p>
+            </article>
+            <div class="example">
+                #if<br>
+                num = 5 <br>
+                if num > 0: <br>
+                print("El número es positivo.")<br>
+                <br>
+                #if-elif-else <br>
+                temperature = 25  <br>
+                if temperature < 0:  <br>
+                print("¡Hace frío!")  <br>
+                elif temperature >= 0 and temperature < 15: <br> 
+                print("Hace frío.") <br> 
+                elif temperature >= 15 and temperature < 25:  <br>
+                print("Es templado.") <br> 
+                else:  <br>
+                print("Hace calor.")  <br>
+                <br>
+                #if-else <br>
+                num = -3 <br>
+                if num > 0: <br>
+	            print("El número es positivo.") <br>
+                else: <br>
+	            print("El número no es positivo.") <br>
+            </div>
+        </section>
+
+        <section class="main-section" id="Loops">
+            <header class="header-nav">Loops</header>
+            <article><p>Los loops en Python, o bucles, son <strong>estructuras que permiten ejecutar un bloque de código repetidamente hasta que una condición específica se cumpla.</strong> 
+                Existen dos tipos principales de loops en Python: <code>for</code> y <code>while</code>.Ejem:</p>
+            </article>
+            <div class="example"> #for <br> 
+                Recorrer una lista de frutas. <br>
+                fruits = ["manzana", "banana", "cereza"] <br>
+                for fruit in fruits: <br>
+	            print(fruit) <br>
+                <br>
+                #while <br>
+                count = 0  <br>
+                while count < 5:  <br>
+                print("Cuenta:", count)  <br>
+                count += 1 <br>
+            </div>
+        </section>
+
+        <section class="main-section" id="Function">
+            <header class="header-nav">Function</header>
+            <article>
+                <p>Una función es un <strong>bloque de código reutilizable</strong> con nombre que realiza una tarea específica.  
+                    Las funciones se definen y se invocan utilizando su nombre, y pueden aceptar parámetros.  
+                    Sintaxis:  <code>def nombre_funcion(parámetros):</code> Ejem: </p>
+            </article>
+            <div class="example">
+                def greet(nombre):<br>  
+                print("Hola, " + nombre)  <br>
+            Llamada a la función: greet("Alice")  <br>
+            Salida: Hola Alice <br>
+            </div>
+        </section>
+
+        <section class="main-section" id="Libraries">
+            <header class="header-nav">Libraries</header>
+            <article>
+                <p>Las librerías en Python <strong>son colecciones de módulos que contienen funciones y herramientas reutilizables.</strong> 
+                    Una librería te permite evitar escribir código desde cero para tareas comunes, ya que encapsulan funcionalidades listas para ser usadas. 
+                    Entre algunas de sus librerias se encuentras: <code>math, NumPy, Pandas, Seaborn, TensorFlow, Keras</code> y muchisimas mas.
+                    </p><br><br>
+            </article>
+            </section>
+
+            <footer>
+                <div class="contacto">
+                <h4>Si quieres, puedes pasar por aqui: </h4>
+                <p class="contacto">valencydesign120@gmail.com</p>
+                <p class="contacto">+503 7631 3138</p>
+                <a href="#"><img class="icons" src="Imagenes/img_ins.svg"></a>
+                <a href="#"><img class="icons" src="Imagenes/img_x.svg"></a>
+                <a href="#"><img class="icons" src="Imagenes/img_git.svg"></a>
+                </div>
+              </footer>
     </main>
+    
+   
 </body>
 </html>
