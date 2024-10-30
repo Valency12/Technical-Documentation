@@ -5,8 +5,12 @@
 }
 
 html, body{
-    background-color: #fcca46;
-    font-family: "Roboto Mono", monospace;
+    /*background-color: #f1f1f1;*/
+    /*background-color: #fcca46;*/
+    background-color: #f7d26d;
+    /*font-family: "Roboto Mono", monospace;*/
+    font-family: Verdana, sans-serif;
+    line-height: 1.5;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -44,9 +48,11 @@ h2{
 }
   /*********************************/
 code{
-    background-color: #fcd979;
+    background-color: #f1d37e;
+    font-family: "Roboto Mono", monospace;
     font-size: 16px;
     border-radius: 5px;
+    padding: 0px 8px; 
 }
 header{
     margin: 20px 30px 20px 30px;
@@ -56,27 +62,37 @@ header{
     font-weight: 400;
     font-style: normal;
     display: block;
-    color: #023047;
+    color: #023047; 
 }
 .header-nav{
-    margin: 25px 25px 25px 0px;
+    margin: 25px 25px 15px 0px;
     font-size: 30px;
+    font-weight: solid;
     text-align: left;
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #023047;
+    /*border-top-color: gray solid;*/
+    
+}
+.line{
+    margin: 30px 5px 20px 0;
+    width: 100%; 
+    border-top: 1px solid #023047;
 }
 p {
     color: #023047;
     margin-right: 35px;
 }
 strong{
-    font-size: 18px;
+    font-size: 17px;
 }
 .example{
     width: auto;
-    background-color: #ffe292;
+    /*background-color: #E7E9EB;*/
+    /*background-color: #ffe292;*/
+    background-color: #facd53;
     color: #023047;
     margin-top: 20px;
     margin-right: 40px;
@@ -85,7 +101,7 @@ strong{
     /*hay que ver otra forma like align items*/
     padding-left: 50px;
     align-items: center;
-    border-radius: 15px;
+    /*border-radius: 15px;*/
     border: solid  #023047;
     border-top-color:transparent;
     border-left-color: transparent ;
@@ -101,7 +117,7 @@ strong{
     max-width: 300px;
     height: 100%;
     /*estilo*/
-    border-right: 3px solid;
+    border-right: 1px solid;
     border-right-color: #023047;
     background-color: #8ecae6;
 }
@@ -125,12 +141,12 @@ ul li a{
  ul li a:hover{
     background-color: #023047;
     color: #ffffff; 
-    padding: 10px 60px;
+    padding: 10px 20px;
 }
 
  ul li{
     margin: 10px; 
-    border: solid 2px;
+    border: solid 1px;
     border-top-color: #023047;
     border-left: transparent;
     border-right: transparent;
@@ -144,7 +160,7 @@ ul li a{
  .main-doc{
     /*position: absolute;*/
     margin-top: 85px;
-    margin-left: 295px;
+    margin-left: 290px;
    
  }
 /*footer*/
