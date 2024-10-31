@@ -8,8 +8,8 @@ html, body{
     /*background-color: #f1f1f1;*/
     /*background-color: #fcca46;*/
     background-color: #f7d26d;
-    /*font-family: "Roboto Mono", monospace;*/
-    font-family: Verdana, sans-serif;
+    font-family: "Roboto Mono", monospace;
+    /*font-family: Verdana, sans-serif;*/
     line-height: 1.5;
     font-optical-sizing: auto;
     font-weight: 500;
