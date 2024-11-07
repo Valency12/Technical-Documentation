@@ -107,16 +107,131 @@ strong{
     border-left-color: transparent ;
 }
 
-#navbar{
+/*menu hamburguesa*/
+/* Sidebar para pantallas grandes */
+nav {
+    margin-top: 60px;
+    max-width: 300px;
+    width: 200px;
+    height: 100vh;
+    border-right: 1px solid;
+    border-right-color: #023047;
+    background-color: #8ecae6;
+   /* background-color: #333;*/
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+   /* padding: 1em;*/
+  }
+
+  /*.logo {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+  }*/
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 1em 0;
+
+    border: solid 1px;
+    border-bottom-color: #023047;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    /*padding: 0.5em;*/
+    border-radius: 5px;
+  }
+
+  nav ul li a:hover {
+    background-color: #555;
+  }
+
+  /* Menú hamburguesa oculto en pantallas grandes */
+  .menu-hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .menu-hamburguesa span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+  /* Contenido principal para pantallas grandes */
+  /*.contenido {
+    flex-grow: 1;
+    /*padding: 2em;
+  }*/
+
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    nav {
+      width: 100%;
+      height: auto;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #8ecae6;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+    
+    /* Sidebar aparece al activar la clase 'show' */
+    nav.show {
+      transform: translateX(0);
+    }
+
+    .menu-hamburguesa {
+      display: flex;
+      position: fixed;
+      top: 1em;
+      /*right: 1em;*/
+      margin-left: 20px;
+      z-index: 10;
+    }
+
+    /* Ocultar menú en modo hamburguesa */
+    nav ul {
+      display: none;
+      flex-direction: column;
+    }
+
+    /* Mostrar menú al activar la clase 'show' */
+    nav.show ul {
+      display: flex;
+    }
+    
+    .contenido {
+      padding-top: 4em; /* Ajuste para el botón de menú */
+    }
+  }
+
+/* #navbar{
     position: fixed;
-    /*min-width: 290px;*/
+    /*min-width: 290px;
     top: 0px; 
     left: 0px; 
     
     margin-top: 60px;
     max-width: 300px;
     height: 100%;
-    /*estilo*/
+    /*estilo
     border-right: 1px solid;
     border-right-color: #023047;
     background-color: #8ecae6;
@@ -124,7 +239,7 @@ strong{
 .navbar a{
     display: block;
     padding: 10px 30px;
-    /*estilo*/
+    /*estilo
     background-color: #8ecae6;
     cursor: pointer;
 }
@@ -156,7 +271,7 @@ ul li a{
     padding-top: 10px; 
     text-align: center;
  }
-
+*/
  .main-doc{
     /*position: absolute;*/
     margin-top: 85px;
