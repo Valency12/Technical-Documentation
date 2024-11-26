@@ -214,12 +214,12 @@ nav {
  .main-doc{ 
     margin-top: 90px;
     /*hay que buscar otra forma*/
-    margin-left: 230px; 
+    /*margin-left: 230px; */
  }
 footer{
     right: 0;
     /*hay que buscar otra forma*/
-    margin-left: 200px;
+    /*margin-left: 200px;*/
 }
  .contacto{
     padding: 20px 5px 20px 5px; 
