@@ -10,6 +10,7 @@ html, body{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    left: 0; 
 }
 .conteiner{
     border-bottom: solid 1px #ffffff; 
@@ -44,14 +45,14 @@ h2{
 code{
     background-color: #495057;
     font-family: "Roboto Mono", monospace;
-    font-size: 16px;
+    font-size: clamp(12, calc(6px + 1.5vw) 16);
     border-radius: 5px;
-    padding: 0px 8px; 
+    padding: 0px 5px; 
 }
 header{
     margin: 20px 30px 20px 30px;
     text-align: center;
-    font-size: 30px;
+    font-size: clamp(20px, calc(2px + 1.5vw), 10px);
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -59,9 +60,9 @@ header{
     color: #023047; 
 }
 .header-nav{
-    margin: 25px 25px 15px 0px;
-    font-size: 30px;
-    font-weight: solid;
+    margin: 25px 25px 5px 0px;
+    font-size: clamp(25px, calc(2px + 1.5vw), 15px);
+    /*font-weight: solid;*/
     text-align: left;
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
@@ -75,11 +76,14 @@ header{
 }
 p {
     color: #adb5bd;
-    margin-right: 35px;
+    font-size: clamp(12, calc(6px + 1.5vw) 16);
+    /*min-font-size: 10px; 
+    /*max-font-size: 18px;
+    /*margin-right: 35px;*/
     font-family: "Roboto", sans-serif; 
 }
 strong{
-    font-size: 17px;
+  font-size: clamp(12, calc(6px + 1.5vw) 16);
 }
 .example{
     width: auto;
@@ -90,7 +94,6 @@ strong{
     padding-top: 10px; 
     padding-bottom: 10px;
     padding-left: 50px;
-    align-items: center;
     border-radius: 15px;
     border: solid  #adb5bd;
     border-top-color:transparent;
@@ -149,9 +152,9 @@ nav {
     transition: 0.4s;
   }
   @media (max-width: 730px) and (min-width: 100px) {
+    /*Y AQUI QUE PEX*/
     .main-doc{ 
-        margin-left: 0;
-        left: 0; 
+       margin: 80px 15px 0px 30px;
      }
     nav {
       margin-top: 65px; 
@@ -201,21 +204,24 @@ nav {
     section{
       margin-left: none;
     }
-    .main-doc{ 
+    /* QUE ONDAS AQUI*/
+    /*.main-doc{ 
       margin-top: 90px;
       margin-left: 40px;
-   }
+   }*/
    footer{
     right: 0;
     margin-left: auto; 
     }
   }
 
- .main-doc{ 
-    margin-top: 90px;
-    /*hay que buscar otra forma*/
-    /*margin-left: 230px; */
- }
+  @media (min-width: 731px){
+    .main-doc{ 
+      margin-left: 230px;
+      margin-top: 90px;
+   }
+  }	
+
 footer{
     right: 0;
     /*hay que buscar otra forma*/
