@@ -225,6 +225,12 @@ nav {
   /*si queremos que el margin no se modifique seria bueno que agregaramos una media query para que se
   mantenga un tamaño proporcional al tamaño de la pantalla*/
   /*faltaria el media query del footer para movil*/
+
+  @media (max-width: 730px) and (min-width: 100px){
+    .textocontacto{
+      margin: 0px 30px 0px 30px;
+    }
+  }
 footer{
     right: 0;
     padding: 50px 5px 50px 5px; 
@@ -232,11 +238,11 @@ footer{
 }
 
 .textocontacto{
-  margin-left: 100px;
+  /*margin-left: 100px;*/
 }
  .contacto{
     margin-bottom: 0px;
-    margin-left: 100px;
+    /*margin-left: 100px;
     /*estilo*/
     background-color: #343a40;
     color: #adb5bd;
@@ -247,7 +253,7 @@ footer{
     font-style: normal;
   }
   .imagenicons{
-    margin-left: 100px;
+    /*margin-left: 100px;*/
   }
   a{
     margin: 5px 20px 5px 20px; 
@@ -259,11 +265,18 @@ footer{
   .icons{
     text-align: center;
     margin: 10px 20px 20px 20px; 
-    width: 25px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     align-items: center;
     display: inline;
   }
+  .centercontact{
+    margin: 0px 30px 0px 30px;
+  }
+  @media (max-width: 730px) and (min-width: 100px){
+    .centercontact{
+      width: clamp(5px, 1vw, 30px)
+    }
 
 /* <uniquifier>: Use a unique and descriptive class name
 /* <weight>: Use a value from 100 to 700
