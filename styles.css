@@ -241,7 +241,6 @@ footer{
   /*margin-left: 100px;*/
 }
  .contacto{
-    margin-bottom: 0px;
     /*margin-left: 100px;
     /*estilo*/
     background-color: #343a40;
@@ -252,11 +251,11 @@ footer{
     font-weight: 400;
     font-style: normal;
   }
-  .imagenicons{
-    /*margin-left: 100px;*/
+  .centercontact{
+    margin-left: 200px;
   }
   a{
-    margin: 5px 20px 5px 20px; 
+    margin: 5px 10px; 
     /*estilo*/
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -264,19 +263,20 @@ footer{
   }
   .icons{
     text-align: center;
-    margin: 10px 20px 20px 20px; 
-    width: 30px;
-    height: 30px;
+    margin: 5px; 
+    width: 20px;
+    height: 20px;
     align-items: center;
     display: inline;
   }
   .centercontact{
-    margin: 0px 30px 0px 30px;
+    margin: 0px 30px 0px 50px;
   }
-  @media (max-width: 730px) and (min-width: 100px){
+  /*@media (max-width: 730px) and (min-width: 100px){
     .centercontact{
-      width: clamp(5px, 1vw, 30px)
+      width: clamp(5px, 1vw, 30px);
     }
+  }
 
 /* <uniquifier>: Use a unique and descriptive class name
 /* <weight>: Use a value from 100 to 700
