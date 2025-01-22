@@ -226,23 +226,18 @@ nav {
   mantenga un tamaño proporcional al tamaño de la pantalla*/
   /*faltaria el media query del footer para movil*/
 
-  @media (max-width: 730px) and (min-width: 100px){
+  @media (max-width: 730px) and (min-width: 200px){
     .textocontacto{
       margin: 0px 30px 0px 30px;
     }
   }
 footer{
-    right: 0;
-    padding: 50px 5px 50px 5px; 
+    width: 100%;
     line-height: 2.5;
 }
 
-.textocontacto{
-  /*margin-left: 100px;*/
-}
  .contacto{
-    /*margin-left: 100px;
-    /*estilo*/
+  padding-top:20px; 
     background-color: #343a40;
     color: #adb5bd;
     font-size: clamp(12, calc(6px + 1.5vw) 16);
@@ -251,12 +246,8 @@ footer{
     font-weight: 400;
     font-style: normal;
   }
-  .centercontact{
-    margin-left: 200px;
-  }
+  
   a{
-    margin: 5px 10px; 
-    /*estilo*/
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -269,12 +260,10 @@ footer{
     align-items: center;
     display: inline;
   }
-  .centercontact{
-    margin: 0px 30px 0px 50px;
-  }
-  /*@media (max-width: 730px) and (min-width: 100px){
-    .centercontact{
-      width: clamp(5px, 1vw, 30px);
+  
+  @media (max-width: 1800px) and (min-width: 730px){
+    .contacto{
+      margin: 0px 0px 0px 120px;
     }
   }
 
