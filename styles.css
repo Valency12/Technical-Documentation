@@ -204,11 +204,6 @@ nav {
     section{
       margin-left: none;
     }
-    /* QUE ONDAS AQUI*/
-    /*.main-doc{ 
-      margin-top: 90px;
-      margin-left: 40px;
-   }*/
    footer{
     right: 0;
     margin-left: auto; 
@@ -228,7 +223,7 @@ nav {
 
   @media (max-width: 730px) and (min-width: 200px){
     .textocontacto{
-      margin: 0px 30px 0px 30px;
+      margin: 0px 20px 0px;
     }
   }
 footer{
